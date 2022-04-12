@@ -16,12 +16,12 @@
         },
         {"tag": "name",
          "patterns": ["what is your name", "what should I call you", "whats your name?"],
-         "responses": ["You can call me sastra.", "I'm sastra!", "I'm sastra aka Tech With sastra."],
+         "responses": ["You can call me sastra.", "I'm sastra!", "I'm SAS aka Sastra."],
          "context_set": ""
         },
         {"tag": "shop",
          "patterns": ["Id like to buy something", "whats on the menu", "what do you reccommend?", "could i get something to eat"],
-         "responses": ["We sell chocolate chip cookies for $2!", "Cookies are on the menu!"],
+         "responses": ["We have rujak Bali for Rp. 10k!", "Rujak are on the menu!"],
          "context_set": ""
         },
         {"tag": "hours",

@@ -9,7 +9,7 @@ import random
 import json
 import pickle
 
-with open("intents.json") as file:
+with open("Data/intents.json") as file:
     data = json.load(file)
 
 try:
@@ -65,7 +65,8 @@ except:
     with open("data.pickle", "wb") as f:
         pickle.dump((words, labels, training, output), f)
 
-tensorflow.reset_default_graph()
+import tensorflow as tf
+tf.compat.v1.reset_default_graph()
 
 net = tflearn.input_data(shape=[None, len(training[0])])
 net = tflearn.fully_connected(net, 8)
