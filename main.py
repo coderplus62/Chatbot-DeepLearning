@@ -1,13 +1,19 @@
+import os
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
 
 import numpy
 import tflearn
-import tensorflow
+import tensorflow as tf
 import random
 import json
 import pickle
+
+physical_devices = tf.config.list_physical_devices("GPU")
+tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 with open("Data/intents.json") as file:
     data = json.load(file)
